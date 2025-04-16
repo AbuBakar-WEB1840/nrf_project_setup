@@ -1,0 +1,7 @@
+# it will include another file Kconfig.zephyr as we do #include in c
+source "Kconfig.zephyr"
+
+config MODULE_1             # we can use CONFIG_MODULE_1 in our code
+    bool "Enable my function"       #enable my function is a label
+    default n               # this is default value, if no other sets this value then it will be n 
+                            # if we set it in prj.conf then it will be overwritten
